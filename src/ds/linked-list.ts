@@ -25,11 +25,13 @@ interface EqualsFunction<T> {
   (a: T, b: T): boolean
 }
 
-class LinkedList<T> implements Iterable<T> {
+export default class LinkedList<T> implements Iterable<T> {
   private list: List<T> | undefined
+
   constructor() {
     this.list = undefined
   }
+
   /**
    * Returns size - O(1)
    * @return {number}
